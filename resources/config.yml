@@ -1,0 +1,47 @@
+# PureChat por 64FF00 (xktiverz@gmail.com, @64ff00 no Twitter)
+
+---
+
+# Versão do PureChat
+# - string
+version: "1.4.10-7"
+
+# Ative se quiser formatos de chat / nametags por mundo
+# - true / false
+enable-multiworld-chat: false
+
+# Verifique se todos os grupos do PurePerms estão listados aqui
+
+# &0: Preto, &1: Azul Escuro, &2: Verde Escuro, &3: Aqua Escuro, &4: Vermelho Escuro,
+# &5: Roxo Escuro, &6: Dourado, &7: Cinza, &8: Cinza Escuro, &9: Azul
+# &a: Verde, &b: Aqua, &c: Vermelho, &d: Roxo Claro, &e: Amarelo, &f: Branco
+# &k: Ofuscado, &l: Negrito, &m: Riscado, &n: Sublinhado, &o: Itálico, &r: Resetar
+
+# Tags disponíveis no PureChat
+# {display_name} Nome do jogador
+# {msg} Mensagem do jogador
+# {prefix} Prefixo do PurePerms
+# {suffix} Sufixo do PurePerms
+# {world} Mundo atual do jogador
+
+groups:
+  Guest:
+    chat: '&7[MEMBRO] &fSMPlayer &8| &7{display_name} &7> &f{msg}'
+    nametag: '&7[MEMBRO] &fSMPlayer &8| &f{display_name}'
+    worlds: []
+
+  Admin:
+    chat: '&c[STAFF] &fSMPlayer &8| &c{display_name} &d>&b {msg}'
+    nametag: '&a[STAFF] &fSMPlayer &8| &6{display_name}'
+    worlds: []
+
+  Owner:
+    chat: '&d[DONO] &fSMPlayer &8| &b{display_name} &c>&6> &b{msg}'
+    nametag: '&d[DONO] &fSMPlayer &8| &b{display_name}'
+    worlds: []
+
+  OP:
+    chat: '&a[OPERADOR] &fSMPlayer &8| &a{prefix}{display_name}{suffix} &c>&6> &f{msg}'
+    nametag: '&a[OPERADOR] &fSMPlayer &8| &b{display_name}'
+    worlds: []
+...
