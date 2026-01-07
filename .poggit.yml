@@ -1,0 +1,8 @@
+--- # Poggit-CI Manifest. Open the CI at https://poggit.pmmp.io/ci/gabriqlna/PureChat-master
+build-by-default: true
+branches:
+- main
+projects:
+  PureChat-master:
+    path: ""
+...
